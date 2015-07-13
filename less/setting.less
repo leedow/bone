@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/**
+ * leeui4配置文件
+ * @authors leedow (644743991@qq.com)
+ * @website http://www.leedow.com
+ * @date    2015-05-11 20:50:01
+ * @version $Id$
+ */
+////////////////////////////////
+//字体相关配置
+@global-font-family:	"Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;//'Microsoft YaHei', SimHei;//全局字体设置
+@global-font-size:		14px;//全局字体大小
+@global-font-color:		#444;//全局字体颜色
+@global-font-light-color: #999;
+@global-a-color:		@global-font-color;
+@global-a-color-hv:		@global-font-color;
+
+@font-size-lg:			18px;//1.2*@global-font-size;
+@font-size-bg:			16px;
+@font-size-md:			@global-font-size;
+@font-size-sm:			12px;//0.8*@global-font-size;
+@font-size-ti:			11px;//0.8*@global-font-size;	
+
+////////////////////////////////
+//基准配置
+@base-line-color:		#eee;//线条颜色
+@base-light-color:		#f9f9f9;//浅背景色
+@base-none-color:		#fff;//阅读背景色
+@base-main-color: 		#2b88cf;//主色
+@base-warm-color: 		#dd514c;//高亮色
+
+@base-padding-v:		18px;
+@base-padding-h:		15px;
+
+@base-radius:			0.28em; //4px;
+
+/////////////////////////////////
+//布局相关设置
+@layout-background:		rgba(255, 255, 255, 1);//遮罩层背景颜色
+@box-shadow-color: 		#e0e0e0;
+
+/////////////////////////////////
+//菜单设置
+@menu-height: 	70px;//下方菜单栏高度
+@menu-padding:			0;//5px;		
+@menu-background-color: #fff;
+
+//////////////////////////////////
+//header相关设置
+@header-height:			44px;
+@header-background:		@base-main-color;
+@header-font-color:		#fff;
+@header-padding-v:		@base-padding-v;
+@header-padding-h:		@base-padding-h;
+@header-line-height:	(@header-height - @header-padding-v*2);
+@header-border-bottom:	1px @base-line-color solid;
+
+/////////////////////////////////
+//按钮      
+
+//按钮尺寸外形
+@btn-padding-bg:		11px 15px;//0.8em 1em; //15px 20px;
+@btn-padding-md:		0.8em 1em; //10px 15px;
+@btn-padding-sm:		7px 10px;		
+@btn-radius:			0.28em;
+	
+//默认无色样式按钮
+@btn-background:		none;
+@btn-border:			0;
+@btn-background-hv:		@base-light-color;
+
+//灰色按钮
+@btn-background-grey: #f2f2f2;
+@btn-border-grey:	1px @base-line-color solid;
+@btn-background-hv-grey: #f9f9f9;
+
+//普通颜色按钮
+@btn-background-default:@base-main-color;
+@btn-background-hv-default:lighten(@base-main-color, 10%);
+@btn-border-default: 	1px @base-main-color solid;
+@btn-border-hv-default:	1px lighten(@base-main-color, 10%) solid;
+@btn-color-default:		#fff;
+
+//警告颜色按钮
+@btn-background-warm:	@base-warm-color;
+@btn-background-hv-warm:lighten(@base-warm-color, 10%);
+@btn-border-warm:		1px @base-warm-color solid;
+@btn-border-hv-warm:	1px lighten(@base-warm-color, 10%) solid;
+@btn-color-warm:		#fff;
+
+//边框按钮
+@btn-border-blank: 1px @base-main-color solid;
+@btn-border-blank-warm: 1px @base-warm-color solid;
+
+//白色按钮：深色背景下
+@btn-border-white: 1px #fff solid;
+@btn-color-white: #fff;
+
+/////////////////////////////////
+//表单配置
+@input-padding: 12px 15px;//0.8em 1em;
+
+/////////////////////////////////
+//响应式
+@response-width: 600px;
+
+
+/////////////////////////////////
+//控件配置
+
+//左侧带图标的控件
+@pic-widget-size-md: 60px;
+@pic-widget-size-lg: 120px;
+@pic-widget-size-sm: 40px;
+
+//数字选择控件
+@count-widget-width: 40px;
+@count-widget-input-padding: 7px 10px;//@btn-padding-md
+
+
+//侧边栏
+@sidebar-width: 240px;
+@sidebar-close-size: @header-height;
+@sidebar-title-height: @header-height;
+
+//tabs切换
+@tabs-width: 100px;//垂直tab的宽度 	
+@tabs-current-color: #fff;
+
+
+//评分控件设置
+@score-normal-color: #999;
+@score-selected-color: #FF9933;

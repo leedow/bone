@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/**
+ * 通用样式
+ * @authors leedow (644743991@qq.com)
+ * @website http://www.leedow.com
+ * @date    2015-05-11 20:53:25
+ * @version $Id$
+ */
+.m0{
+	margin:0;
+}
+
+.p0{
+	padding:0;
+}
+
+.pr0{
+	padding-right: 0 !important;
+}
+
+.mp0{
+	.m0;
+	.p0;
+}
+
+*{
+	box-sizing:			border-box;
+	-moz-box-sizing:	border-box; /* Firefox */
+	-webkit-box-sizing:	border-box; /* Safari */
+}
+
+html, body{
+	width:100%;
+	//height:100%;
+	.mp0;
+	line-height: 1.4em;
+}
+
+body{	
+	//overflow-y: auto;
+	text-align: center;
+	font-family: @global-font-family;
+	font-size: @global-font-size;
+	color: @global-font-color;
+	//-webkit-animation: slideFromRight 0.2s;
+}
+
+ul{
+	list-style-type: none;
+	.mp0;
+}
+
+a{
+	text-decoration: none;
+	color: @global-a-color;
+	-webkit-tap-highlight-color:transparent;
+}
+
+a:hover{
+	//color: @global-a-color-hv;
+}
+
+a:visited{
+	color: @global-a-color;
+}
+
+h1, h2, h3, h4{
+	.m0;
+	padding: @base-padding-h 0 ceil(@base-padding-h*0.6) 0;
+}
+
+/*input{
+	line-height: 1em;
+}*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input[type="text"], input[type="submit"], input[type="button"], select, button{
+	//-moz-appearance:textfield;
+    -webkit-appearance: none;
+}
+
+button{
+	-webkit-tap-highlight-color:transparent;
+}
+
+input,button,select,textarea{outline:none}

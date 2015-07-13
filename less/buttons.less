@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/**
+ * buttons
+ * @authors leedow (644743991@qq.com)
+ * @website http://www.leedow.com
+ * @date    2015-05-14 21:27:01
+ * @version $Id$
+ */
+button, input{
+	font-family: @global-font-family;
+}
+
+/////////////////////////////
+//按钮样式
+.button, 
+.button-default,
+.button-warm,
+{
+	border-radius: @btn-radius;
+	border: @btn-border;
+	cursor: pointer;
+	display: inline-block;
+	.button-bg;
+}
+
+.button:visited{
+	//color: #fff;
+}
+
+.button{
+	background: @btn-background; 
+}
+
+.button:hover{
+	background: @btn-background-hv; 
+}
+
+.button-grey{
+	background: @btn-background-grey;
+	border: @btn-border-grey;
+}
+
+.button-grey:hover{
+	background: @btn-background-hv-grey;
+}
+
+.button-grey:visited{
+	color: @global-font-color;
+}
+
+.button-default{
+	background: @btn-background-default;
+	border: @btn-border-default;
+	color: @btn-color-default; 
+}
+
+.button-default:hover{
+	background: @btn-background-hv-default;
+	border: @btn-border-hv-default;
+}
+
+.button-default:visited{
+	color: @btn-color-default;
+}
+
+.button-warm{
+	background: @btn-background-warm;
+	border: @btn-border-warm;
+	color: @btn-color-warm;
+}
+
+.button-warm:hover{
+	background: @btn-background-hv-warm;
+	border: @btn-border-hv-warm;
+}
+
+.button-warm:visited{
+	color: @btn-color-warm;
+}
+
+.button-blank{
+	border: @btn-border-blank;
+	color: @base-main-color;
+	background:  none;
+}
+
+.button-blank:hover{
+	border: @btn-border-blank;
+	color: @base-main-color;
+	background: none;
+}
+
+.button-blank:visited{
+	border: @btn-border-blank;
+	color: @base-main-color;
+}
+
+.button-blank-warm{
+	border: @btn-border-blank-warm;
+	color: @base-warm-color;
+	background:  none;
+}
+
+.button-blank-warm:hover{
+	border: @btn-border-blank-warm;
+	color: @base-warm-color;
+	background: none;
+}
+
+.button-blank-warm:visited{
+	border: @btn-border-blank-warm;
+	color: @base-warm-color;
+}
+
+.button-white{
+	border:@btn-border-white;
+	color: #fff;
+	background:  none;
+}
+
+.button-white:hover{
+	border: @btn-border-white;
+	color: #fff;
+	background: none;
+}
+
+.button-white:visited{
+	border: @btn-border-white;
+	color: #fff;
+}
+////////////////////////////
+//按钮尺寸
+.button-sm{
+	padding: @btn-padding-sm;
+	font-size: @font-size-md;
+}
+
+
+.button-md{
+	padding: @btn-padding-md;
+	font-size: @font-size-md;//@font-size-md;
+}
+
+.button-bg{
+	padding: @btn-padding-bg;
+	font-size: @font-size-bg;
+}
+
+//宽屏按钮
+.button-block{
+	display: block;
+	width: 100%;
+}
