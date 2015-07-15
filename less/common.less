@@ -23,26 +23,16 @@
 	.p0;
 }
 
-*{
-	box-sizing:			border-box;
-	-moz-box-sizing:	border-box; /* Firefox */
-	-webkit-box-sizing:	border-box; /* Safari */
-}
-
 html, body{
-	width:100%;
-	//height:100%;
 	.mp0;
 	line-height: 1.4em;
 }
 
 body{	
-	//overflow-y: auto;
 	text-align: center;
 	font-family: @global-font-family;
 	font-size: @global-font-size;
 	color: @global-font-color;
-	//-webkit-animation: slideFromRight 0.2s;
 }
 
 ul{
@@ -69,15 +59,12 @@ h1, h2, h3, h4{
 	padding: @base-padding-h 0 ceil(@base-padding-h*0.6) 0;
 }
 
-/*input{
-	line-height: 1em;
-}*/
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none !important;
     margin: 0; 
 }
+
 input[type="text"], input[type="submit"], input[type="button"], select, button{
 	//-moz-appearance:textfield;
     -webkit-appearance: none;

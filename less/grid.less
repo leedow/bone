@@ -6,51 +6,178 @@
  * @date    2015-05-17 12:01:55
  * @version $Id$
  */
+@w-1: 8.333333%;
+@w-2: 16.666666%;
+@w-3: 25%;
+@w-4: 33.333333%;
+@w-5: 41.666666%;
+@w-6: 50%;
+@w-7: 58.333333%;
+@w-8: 66.666666%;
+@w-9: 75%;
+@w-10: 83.333333%;
+@w-11: 91.666666%;
+
+.p10{
+	padding: 10px;
+}
+
+.p15{
+	padding: 15px;
+}
+
+.p20{
+	padding: 20px;
+}
+
+.p{
+	.p15;
+}
+
+.container{
+
+}
+
 .row{
-	//padding: @base-padding-v @base-padding-h;
-	overflow:hidden;
-}
 
-.row-pd{
-	padding: @base-padding-v @base-padding-h;
-}
-
-.col-pd{
-	padding:  0.8em @base-padding-h/2;
-}
-
-.col-pd-sm{
-	padding: @base-padding-v/2 @base-padding-h/2;
 }
 
 .col{
 	float:left;
-	overflow: hidden;
 }
 
-.col-4{
+.col-1{
 	.col;
-	width: 33.333333%;
+	width: @w-1;
+}
+
+.col-2{
+	.col;
+	width: @w-2;
 }
 
 .col-3{
 	.col;
-	width: 25%;
+	width: @w-3;
+}
+
+.col-4{
+	.col;
+	width: @w-4;
+}
+
+.col-5{
+	.col;
+	width: @w-5;
 }
 
 .col-6{
 	.col;
-	width: 50%;
+	width: @w-6;
+}
+
+.col-7{
+	.col;
+	width: @w-7;
+}
+
+.col-8{
+	.col;
+	width: @w-8;
+}
+
+.col-9{
+	.col;
+	width: @w-9;
+}
+
+.col-10{
+	.col;
+	width: @w-10;
+}
+
+.col-11 {
+	.col;
+	width: @w-11;
+}
+
+.offset-1{
+	margin-left: @w-1;
+}
+
+.offset-2{
+	margin-left: @w-2;
 }
 
 .offset-3{
-	margin-left: 25%;
+	margin-left: @w-3;
 }
 
 .offset-4{
-	margin-left: 33.33333%;
+	margin-left: @w-4;
+}
+
+.offset-5{
+	margin-left: @w-5;
+}
+
+.offset-6{
+	margin-left: @w-6;
+}
+
+.offset-7{
+	margin-left: @w-7;
 }
 
 .offset-8{
-	margin-left: 66.666666%;
+	margin-left: @w-8;
+}
+
+.offset-9{
+	margin-left: @w-9;
+}
+
+.offset-10{
+	margin-left: @w-10;
+}
+
+.offset-11{
+	margin-left: @w-11;
+}
+
+//带侧栏的栅格
+.container-sys{
+	width: 100%;
+	height: 100%;
+}
+
+.col-header{
+	width: 100%;
+	height: @header-height;
+}
+
+.header-fixed{
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+.col-sidebar{
+	width: @sidebar-width; 
+}
+
+.sidebar-fixed{
+	position: absolute;
+	left:0;
+	top: @header-height;
+	bottom:0;
+}
+
+.col-content{
+	position: absolute;
+	right:0;
+	left: @sidebar-width;
+	top: @header-height;
+	bottom:0;
+	overflow-y: auto;
 }
