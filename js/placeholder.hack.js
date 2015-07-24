@@ -45,7 +45,22 @@ bone.placeholder =  (function(){
 		});
 	}
 
+	//特殊情况下提示内容更新定位
+	function refresh(){
+		$('.phr').each(function(){
+			var name = $(this).attr('id').split('-')[1];
+			var ip = $('input[name="'+name+'"]');
+			var x = ip.offset().left + parseInt(ip.css('padding-left'));
+			var y = ip.offset().top + parseInt(ip.css('padding-top'));
+			$(this).css({
+				left: x,
+				top: y
+			});
+		});
+	}
+
 	return {
-		init: init
+		init: 		init,
+		refresh: 	refresh
 	};
 })()

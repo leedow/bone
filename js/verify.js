@@ -74,6 +74,7 @@ bone.verify = (function(){
 				}
 			});
 
+			bone.placeholder.refresh();
 			
 			return flag;
 		}
