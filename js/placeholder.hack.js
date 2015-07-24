@@ -41,6 +41,8 @@ bone.placeholder =  (function(){
 			}).on('blur', function(){
 				if($(this).val().match(/^\s*$/))
 					phr.css('display', 'block');
+			}).on('focus', function(){
+				phr.css('display', 'none');
 			});	
 		});
 	}

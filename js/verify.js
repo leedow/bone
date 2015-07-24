@@ -88,7 +88,7 @@ bone.verify = (function(){
 			}
 		}	
 
-		function set_state(){
+		function set_state(params){
 			for(key in params){
 				if (params.key == '') {
 					$(key).next('.input-wrong').remove();
@@ -149,6 +149,7 @@ bone.verify = (function(){
 
 
 	return {
-		check: check_all
+		check: check_all,
+		set: set_state
 	}
 })()
