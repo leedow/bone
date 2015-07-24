@@ -33,6 +33,7 @@ body{
 	font-family: @global-font-family;
 	font-size: @global-font-size;
 	color: @global-font-color;
+	line-height: @global-font-size;
 }
 
 ul{
@@ -47,31 +48,20 @@ a{
 }
 
 a:hover{
-	//color: @global-a-color-hv;
+	color: @global-a-color-hv;
 }
 
 a:visited{
-	color: @global-a-color;
+	//color: @global-a-color;
 }
 
 h1, h2, h3, h4{
 	.m0;
 	padding: @base-padding-h 0 ceil(@base-padding-h*0.6) 0;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
-    -webkit-appearance: none !important;
-    margin: 0; 
+ 
+img{
+	border:0;
 }
 
-input[type="text"], input[type="submit"], input[type="button"], select, button{
-	//-moz-appearance:textfield;
-    -webkit-appearance: none;
-}
-
-button{
-	-webkit-tap-highlight-color:transparent;
-}
-
-input,button,select,textarea{outline:none}
+ .fl{float: left}

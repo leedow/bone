@@ -1,0 +1,31 @@
+.pagination{
+ 
+	overflow: hidden;
+	border: 1px @base-line-color solid;
+	border-right: 0px;
+	display: inline-block;
+	
+		a{
+			display: inline-block;
+			border-right: 1px @base-line-color solid;
+			padding: @pagination-padding;
+		}
+
+		a:hover{
+			background: @base-light-color;
+		 
+		}
+
+		a:last{
+			border-right:0;
+		}
+	
+		strong{
+			display: inline-block;
+			border-right: 1px @base-line-color solid;
+			padding: @pagination-padding;
+			background: @pagination-active-background-color;
+			color: @pagination-active-color;
+		}
+
+}

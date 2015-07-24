@@ -1,0 +1,40 @@
+.list-group{
+	.active{
+		background: @list-active-background-color;
+		color: @list-active-color;
+	}
+}
+
+.list-group-item{
+	display: block;
+	padding: @list-padding;
+	text-align: left;
+ 	color: @list-color;
+  	position: relative;
+
+}
+
+.list-group-item:hover{
+	background: @list-active-background-color;
+	color: @list-active-color !important;
+ 	
+}
+
+.list-group-item-icon{
+	padding-left: (40+@list-icon-size);
+	.icon{
+ 		 position: absolute;
+ 		 left: 20px;
+ 		 top: 50%;
+ 		 margin-top: -@list-icon-size/2;
+ 		 line-height: 22px;
+ 		 font-size: @list-icon-size;
+ 	}
+}
+
+
+
+.list-group-item:visited{
+ 	color: @list-color;
+}
+

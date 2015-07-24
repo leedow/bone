@@ -2,13 +2,16 @@ module.exports = function(grunt){
 	grunt.initConfig({		
 		uglify: {
 			build: {
-				src: [],
-				dest: 'bone.min.js'
-			}/*,
+				src: ['js/bone.js',
+					'js/placeholder.hack.js',
+					'js/verify.js'
+				],
+				dest: 'D:/sae/wwwroot/source/Earth/source/bone.min.js'
+			},
 			build2: {
-				src: ['js/iscroll-lite.js'],
+				src: ['js/iscroll-infinite.js'],
 				dest: 'iscroll.min.js'
-			}*/
+			}
 	    },
 	    watch: {
 	    	client: {
@@ -19,7 +22,7 @@ module.exports = function(grunt){
 	    	},
 	    	compress: {
 	    		files: ['less/*.less', 'js/*'],
-	    		tasks: ['less:dev', 'uglify:build']
+	    		tasks: ['less:dev', 'uglify:build', 'uglify:build2']
 	    	}
 	    },	
 	    less: {
@@ -28,7 +31,7 @@ module.exports = function(grunt){
 	    			compress: true
 	    		},
 	    		files: {
-	    			'bone.min.css' : 'less/main.less'
+	    			'D:/sae/wwwroot/source/Earth/source/bone.min.css' : 'less/main.less'
 	    		}
 	    	}
 	    }

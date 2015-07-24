@@ -24,5 +24,27 @@
 	<div class="box">
 		111
 	</div>	
+
+	<script type="text/javascript">
+		function test(){
+			alert(a);
+			return;
+		}
+		function a(){
+			a=111;
+			test();
+		}
+
+		a();
+
+		aa = function(){
+
+		}
+
+		bb = {}
+		bb.__proto__ = aa;
+		alert(aa.__proto__)
+
+	</script>
 </body>
 </html>

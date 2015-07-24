@@ -10,144 +10,44 @@ button, input{
 	font-family: @global-font-family;
 }
 
-/////////////////////////////
-//按钮样式
-.button, 
-.button-default,
-.button-warm,
-{
+
+.btn{
+	
+	padding: @btn-padding-md;
 	border-radius: @btn-radius;
-	border: @btn-border;
-	cursor: pointer;
-	display: inline-block;
-	.button-bg;
+	border: 0;
+	line-height: @global-font-size;
+
 }
 
-.button:visited{
-	//color: #fff;
+.btn-block{
+	display: block;
 }
 
-.button{
-	background: @btn-background; 
+.btn-default{
+	.btn;
+	background: @btn-background;
+	border: @btn-border solid;
 }
 
-.button:hover{
-	background: @btn-background-hv; 
+.btn-primary{
+	.btn;
+	background: @btn-background-primary;
+	border: @btn-border-primary;
+	color: @btn-color-primary;
 }
 
-.button-grey{
-	background: @btn-background-grey;
-	border: @btn-border-grey;
-}
-
-.button-grey:hover{
-	background: @btn-background-hv-grey;
-}
-
-.button-grey:visited{
-	color: @global-font-color;
-}
-
-.button-default{
-	background: @btn-background-default;
-	border: @btn-border-default;
-	color: @btn-color-default; 
-}
-
-.button-default:hover{
-	background: @btn-background-hv-default;
-	border: @btn-border-hv-default;
-}
-
-.button-default:visited{
-	color: @btn-color-default;
-}
-
-.button-warm{
+.btn-warm{
+	.btn;
 	background: @btn-background-warm;
 	border: @btn-border-warm;
 	color: @btn-color-warm;
 }
 
-.button-warm:hover{
-	background: @btn-background-hv-warm;
-	border: @btn-border-hv-warm;
+.btn-lg{
+
 }
 
-.button-warm:visited{
-	color: @btn-color-warm;
-}
-
-.button-blank{
-	border: @btn-border-blank;
-	color: @base-main-color;
-	background:  none;
-}
-
-.button-blank:hover{
-	border: @btn-border-blank;
-	color: @base-main-color;
-	background: none;
-}
-
-.button-blank:visited{
-	border: @btn-border-blank;
-	color: @base-main-color;
-}
-
-.button-blank-warm{
-	border: @btn-border-blank-warm;
-	color: @base-warm-color;
-	background:  none;
-}
-
-.button-blank-warm:hover{
-	border: @btn-border-blank-warm;
-	color: @base-warm-color;
-	background: none;
-}
-
-.button-blank-warm:visited{
-	border: @btn-border-blank-warm;
-	color: @base-warm-color;
-}
-
-.button-white{
-	border:@btn-border-white;
-	color: #fff;
-	background:  none;
-}
-
-.button-white:hover{
-	border: @btn-border-white;
-	color: #fff;
-	background: none;
-}
-
-.button-white:visited{
-	border: @btn-border-white;
-	color: #fff;
-}
-////////////////////////////
-//按钮尺寸
-.button-sm{
+.btn-sm{
 	padding: @btn-padding-sm;
-	font-size: @font-size-md;
-}
-
-
-.button-md{
-	padding: @btn-padding-md;
-	font-size: @font-size-md;//@font-size-md;
-}
-
-.button-bg{
-	padding: @btn-padding-bg;
-	font-size: @font-size-bg;
-}
-
-//宽屏按钮
-.button-block{
-	display: block;
-	width: 100%;
 }
