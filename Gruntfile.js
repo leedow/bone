@@ -4,9 +4,10 @@ module.exports = function(grunt){
 			build: {
 				src: ['js/bone.js',
 					'js/placeholder.hack.js',
-					'js/verify.js'
+					'js/verify.js',
+					'js/count_widget.js'
 				],
-				dest: 'D:/sae/wwwroot/source/Earth/source/bone.min.js'
+				dest: 'D:/sae/wwwroot/source/Earth/js/bone.min.js'
 			},
 			build2: {
 				src: ['js/iscroll-infinite.js'],

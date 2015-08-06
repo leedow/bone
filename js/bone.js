@@ -10,9 +10,9 @@ var bone = {};
 (function(factory){
 	if (typeof define == 'function') {
 		define(function(require, exports, module){
-			require('zepto');
-			console.log("init leeui");
-			factory(Zepto);
+			require('jquery');
+			console.log("init bone");
+			factory();
 		});
 	} else {
 		factory();
@@ -21,6 +21,7 @@ var bone = {};
 	bone.init = function(){
 		$(document).ready(function(){
 			 bone.placeholder.init();
+			 bone.counter.init();
 			 //bone.verify.init();
 		});
 

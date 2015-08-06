@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/**
+ * Number Count Widget
+ * @authors leedow (644743991@qq.com)
+ * @website http://www.leedow.com
+ * @date    2015-05-16 13:29:06
+ * @version $Id$
+ */
+.count-widget{
+	//border: 1px @base-line-color solid;
+	//border-radius: @base-radius;
+	overflow: hidden;
+	float:left;
+	input{	
+		padding: @count-widget-input-padding;
+		padding-left:0;
+		padding-right:0;
+		border: 0;
+		margin: 0;
+		width: @count-widget-width;	
+		font-size: @font-size-md;
+		text-align: center;
+	}
+
+	.sub, .plus, .tag-left, .tag-right{
+		display: inline-block;
+		height:40px;
+		width: 40px;
+		background: none;
+		border: 0;
+		margin:0;	
+		border-radius: 0;
+		color: @base-main-color;
+	}
+
+	.sub, .tag-left{
+		border-right: 1px @base-line-color solid;
+	}
+
+	.plus, .tag-right{
+		border-left: 1px @base-line-color solid;
+	}
+
+}
