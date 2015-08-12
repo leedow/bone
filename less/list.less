@@ -1,7 +1,13 @@
 .list-group{
 	.active{
 		background: @list-active-background-color;
-		color: @list-active-color;
+		//border-left: 2px @base-main-color solid;
+		color: @base-main-color !important;
+		font-weight: bold;
+	}
+	.active:before{
+		content: '\f0da';
+		display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0, 0)
 	}
 }
 
@@ -16,25 +22,28 @@
 
 .list-group-item:hover{
 	background: @list-active-background-color;
-	color: @list-active-color !important;
+	//color: @list-active-color !important;
  	
 }
 
 .list-group-item-icon{
-	padding-left: (40+@list-icon-size);
+	padding-left: (15+@list-icon-size);
 	.icon{
  		 position: absolute;
- 		 left: 20px;
+ 		 left: 5px;
  		 top: 50%;
  		 margin-top: -@list-icon-size/2;
  		 line-height: 22px;
  		 font-size: @list-icon-size;
+ 		 color: @list-icon-color;
+ 		 width: 24px;
+ 		 text-align: center;
  	}
 }
 
 
 
 .list-group-item:visited{
- 	color: @list-color;
+ 	//color: @list-color;
 }
 

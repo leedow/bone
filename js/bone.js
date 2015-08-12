@@ -11,7 +11,7 @@ var bone = {};
 	if (typeof define == 'function') {
 		define(function(require, exports, module){
 			require('jquery');
-			console.log("init bone");
+			//console.log("init bone");
 			factory();
 		});
 	} else {
@@ -25,10 +25,7 @@ var bone = {};
 			 //bone.verify.init();
 		});
 
-
 	}
-
-
 	
 })
 

@@ -12,7 +12,7 @@ button, input{
 
 
 .btn{
-	
+	display: inline-block;
 	padding: @btn-padding-md;
 	border-radius: @btn-radius;
 	border: 0;
@@ -27,7 +27,13 @@ button, input{
 .btn-default{
 	.btn;
 	background: @btn-background;
+	border: @btn-border;
 	border: @btn-border solid;
+}
+
+.btn-default:hover{
+	background: @btn-background-hv;
+	 
 }
 
 .btn-primary{
@@ -37,6 +43,11 @@ button, input{
 	color: @btn-color-primary;
 }
 
+.btn-primary:hover{
+	color: #fff;
+	background: @btn-background-hv-primary;
+}
+
 .btn-warm{
 	.btn;
 	background: @btn-background-warm;
@@ -44,8 +55,14 @@ button, input{
 	color: @btn-color-warm;
 }
 
-.btn-lg{
+.btn-warm:hover{
+	color: #fff;
+	background: @btn-background-hv-warm;
+}
 
+.btn-lg{
+	padding: @btn-padding-lg;
+	font-size: @font-size-lg;
 }
 
 .btn-sm{

@@ -24,26 +24,29 @@ bone.placeholder =  (function(){
 
 	function _each(obj){
 		$(obj).each(function(){
-			var x = $(this).offset().left + parseInt($(this).css('padding-left'));
-			var y = $(this).offset().top + parseInt($(this).css('padding-top'));
-			
-			$('body').append(				 
-				'<span class="phr" id="phr-'+$(this).attr('name')+'" style="left:'+x+'px;top:'+y+'px">'
-				+$(this).attr('placeholder')+'</span>');
-			var phr = $('#phr-' + $(this).attr('name'));
-			phr.on('click', function(){
-				$(this).css('display', 'none');
-				$('input[name="'+$(this).attr('id').split('-')[1]+'"]').focus();
-			});
-			$(this).on('click', function(){		 
+			if($(this).attr('need-hack') != undefined){
+				var x = $(this).offset().left + parseInt($(this).css('padding-left'));
+				var y = $(this).offset().top + parseInt($(this).css('padding-top'));
+				
+				$('body').append(				 
+					'<span class="phr" id="phr-'+$(this).attr('name')+'" style="left:'+x+'px;top:'+y+'px">'
+					+$(this).attr('placeholder')+'</span>');
+				var phr = $('#phr-' + $(this).attr('name'));
+				phr.on('click', function(){
+					$(this).css('display', 'none');
+					$('input[name="'+$(this).attr('id').split('-')[1]+'"]').focus();
+				});
+				$(this).on('click', function(){		 
+						phr.css('display', 'none');
+					 		
+				}).on('blur', function(){
+					if($(this).val().match(/^\s*$/))
+						phr.css('display', 'block');
+				}).on('focus', function(){
 					phr.css('display', 'none');
-				 		
-			}).on('blur', function(){
-				if($(this).val().match(/^\s*$/))
-					phr.css('display', 'block');
-			}).on('focus', function(){
-				phr.css('display', 'none');
-			});	
+				});	
+			}
+			
 		});
 	}
 

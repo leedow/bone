@@ -1,0 +1,235 @@
+/*
+ * theme for 集市宝PC版用户中心
+ */
+.user-logo{
+	float:left;
+	font-size: 28px;
+}
+.user-header-top{
+	background: #f2f2f2;
+}
+.user-header-bg{
+	background:url(../img/bg.jpg) @base-main-color;
+
+} 
+
+.user-header{
+	text-align: left;
+	position: relative;
+
+	h1{
+
+		padding: 0;
+		color:#fff;
+	}
+}
+.user-main-menu{
+	height: 94px;
+	float:left;
+	li{
+		position: relative;
+		height: 94px;
+		line-height: 94px;
+		float: left;
+		padding:0 40px 0 10px;
+		font-size: 18px;
+		a{
+			color:#fff;
+		}
+	}
+	.current:before{
+		position: absolute;
+		left:50%;
+		margin-left:-25px;
+		bottom:0;
+		content: " ";
+		height: 0;
+		width: 0;
+		border-color: transparent;
+		border-style: solid;
+		border-width: 10px;
+		border-bottom-color: #fff;
+	}
+}
+
+ 
+
+.user-search{
+	margin:25px 0 0 60px;
+	float: right;
+	height:40px;
+	width: 400px;
+	font-size: 16px;
+	background: #fff;
+
+}
+
+.users-input{
+	height: 40px;
+	//background: #219C7B;
+	//padding: 2px;
+	width: 350px;
+	overflow: hidden;
+	float: left;
+	input{
+		display: block;
+		font-size: 16px;
+		border: 0;
+		padding:0 15px;
+		line-height: 40px;
+		height: 40px;
+ 		width:320px;
+ 		border-radius: 0;
+	}
+}
+
+.users-button{
+	height: 40px;
+	width: 38px;
+	//padding: 2px;
+	overflow: hidden;
+	float:left;
+	//background: @base-main-color;
+	button{
+		background: none;font-size: 16px;
+		border:0;
+		color:@base-main-color;
+		line-height: 40px;
+		padding:0;
+		margin:0;
+		padding:0;
+		width: 40px;
+		text-align: center;
+	}
+}
+
+.user-menu{
+	padding:30px 0;
+}
+
+
+//shopping cart
+.shopping-list{
+	padding: 20px 0;
+}
+.product{
+	border-bottom:1px @base-line-color solid;
+	text-align: left;
+	overflow: hidden;
+	position: relative;
+	padding:10px 0 10px 100px;
+	min-height: 60px;
+	.pro-img{
+		position: absolute;
+		left:0;
+		top:10px;
+		width:60px;
+		img{
+			width: 60px;
+		}
+	}
+	.user-counter{
+		border: 1px @base-line-color solid;
+	}
+}
+
+.pro-info{
+	text-align: left;
+	h3{
+		font-size: 16px;
+		padding:10px 20px 10px 0;
+		margin:0;
+	}
+	p{
+		padding:0 20px 0 0;
+		margin:0;
+		color:#999;
+		line-height: 22px;
+	}
+}
+
+.pro-count{
+	padding-top: 10px;
+	.unit{
+		line-height: 42px;
+		padding-left: 15px;
+	}
+}
+
+.pro-price{
+	p{
+		margin:0;
+		padding:0;
+	}
+	.title{
+		padding: 10px 0;
+		color: #999;
+	}
+
+	.value{
+		span{
+			font-size: 22px;
+			color:#dd514c
+		}
+	}
+}
+
+.pro-edit{
+	padding-top: 10px;
+}
+
+.pay-dock{
+	padding:0 0 20px 0;
+	height: 80px;
+}
+
+.pay-price{
+	span{
+		font-size: 28px;
+		color: #dd514c
+	}
+}
+
+//通用信息列表
+.item-list{
+	li{
+		padding:10px 0;
+	}
+}
+.item-box{
+
+	padding:15px;
+	border: 1px @base-line-color solid;
+	text-align: left;
+	overflow: hidden;
+	.item-title{
+		 margin-bottom: 5px;
+		border-bottom: 1px @base-line-color solid;
+		padding-bottom: 15px;
+		h3{
+			margin:0;
+			padding:0;
+		}
+	}
+}
+.item-info{
+	p{
+		margin:0;
+		padding:0;
+	}
+	.title{
+		padding: 10px 0;
+		color: #999;
+	}
+
+	.value{
+		span{
+			font-size: 22px;
+			color:#dd514c
+		}
+	}
+}
+.item-tab{
+	padding-top: 15px;
+	text-align: right;
+}

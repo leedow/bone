@@ -10,7 +10,7 @@ bone.counter = (function(){
 	var stamp = 0;
 	//初始化DOM
 	function init(){
-		console.log('init count widget');
+		//console.log('init count widget');
 		obj = $('.count-widget');
 		obj.find('input').off('click').off('blur').off('change');
 		obj.find('input').click(function(){
