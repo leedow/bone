@@ -27,12 +27,15 @@ bone.dialog = (function(){
 		this._config = config?config:{
 			'buttons': 'single' 
 		}
+		this.timer;
 		this._ok = function(){};
 		this._no = function(){};
 
 		//显示对话框
 		this.open = function(){	
+			clearTimeout($this.timer);
 			$('#dialog-layout').css('display', 'block');
+
 		}
 
 		//关闭对话框
@@ -65,7 +68,7 @@ bone.dialog = (function(){
 			}
 
 			$('#dialog-layout .dialog').removeClass('dialog-open').addClass('dialog-close');
-	 		var timer = setTimeout(function(){
+	 		$this.timer = setTimeout(function(){
 	 			$('#dialog-layout').css('display', 'none');
 	 		}, 300);
 			
@@ -112,6 +115,8 @@ bone.dialog = (function(){
 			$this._config = config?config:{
 				'buttons': 'single' 
 			}
+			$this._ok = function(){};
+			$this._no = function(){};
 
 			$this._dom();
 			$this.open();

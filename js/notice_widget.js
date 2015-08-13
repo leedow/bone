@@ -10,11 +10,11 @@ bone.notice = (function(){
 	function show(msg){
 		var timer;
 		if($('#bone-notice').length > 0){
-			$('#bone-notice').text(msg);
+			$('#bone-notice').html(msg);
 		} else {
 			$('body').append('<div id="bone-notice">' + msg + '</div>');
 		}
-		clearTimer(timer);
+		clearTimeout(timer);
 		var $notice = $('#bone-notice');
 		$notice.css('bottom', '-100px').animate({
 			'bottom': '100px'
