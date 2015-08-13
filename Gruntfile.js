@@ -6,7 +6,8 @@ module.exports = function(grunt){
 					'js/placeholder.hack.js',
 					'js/verify.js',
 					'js/count_widget.js',
-					'js/dialog.js'
+					'js/dialog.js',
+					'js/notice_widget.js'
 				],
 				dest: 'D:/sae/wwwroot/source/Earth/js/bone.min.js'
 			},

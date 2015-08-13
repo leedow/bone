@@ -22,6 +22,7 @@ var bone = {};
 		$(document).ready(function(){
 			 bone.placeholder.init();
 			 bone.counter.init();
+			 bone.notice();
 			 //bone.verify.init();
 		});
 
