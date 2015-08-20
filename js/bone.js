@@ -22,6 +22,7 @@ var bone = {};
 		$(document).ready(function(){
 			 bone.placeholder.init();
 			 bone.counter.init();
+			 bone.score.init();
 			 //bone.notice('添加到购物车成功！');
 			 //bone.verify.init();
 		});

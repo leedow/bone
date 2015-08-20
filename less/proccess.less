@@ -1,0 +1,45 @@
+.proccess{
+ 
+	height:44px;
+	line-height: 44px;
+	text-align: center;
+	 text-align: left;
+	 font-size: @font-size-lg;
+
+	.proccess-item{	
+		position: relative;
+		p{
+			color:#999;
+			text-align: left;
+			margin:0;
+			padding:0;
+			padding-left:60px;
+
+		}
+	}
+
+	.proccess-item .label{
+		position: absolute;
+		left:6px;
+		top:6px;
+		width:30px;
+		height:30px;
+		line-height: 30px;
+		text-align: center;
+		background: #eee;
+		color:#fff;
+		border-radius: 15px;
+	}
+
+	.active{
+		.label{
+			background: @base-main-color;
+		}
+		p{
+			color: @base-main-color;
+		}
+	}
+
+ 
+	 
+}

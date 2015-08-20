@@ -7,6 +7,7 @@
  */
 
 bone.placeholder =  (function(){
+	//var pd_left = 15;
 	function init(){
 		if(navigator.userAgent.indexOf('MSIE 9.0') >= 0){
 			_each('input[type="text"]');
@@ -26,10 +27,10 @@ bone.placeholder =  (function(){
 		$(obj).each(function(){
 			if($(this).attr('need-hack') != undefined){
 				var x = $(this).offset().left + parseInt($(this).css('padding-left'));
-				var y = $(this).offset().top + parseInt($(this).css('padding-top'));
-				
+				var y = $(this).offset().top;// + parseInt($(this).());
+				var height = $(this).height();
 				$('body').append(				 
-					'<span class="phr" id="phr-'+$(this).attr('name')+'" style="left:'+x+'px;top:'+y+'px">'
+					'<span class="phr" id="phr-'+$(this).attr('name')+'" style="left:'+x+'px;top:'+y+'px;line-height:' + height + 'px;">'
 					+$(this).attr('placeholder')+'</span>');
 				var phr = $('#phr-' + $(this).attr('name'));
 				phr.on('click', function(){
@@ -56,10 +57,10 @@ bone.placeholder =  (function(){
 			var name = $(this).attr('id').split('-')[1];
 			var ip = $('input[name="'+name+'"]');
 			var x = ip.offset().left + parseInt(ip.css('padding-left'));
-			var y = ip.offset().top + parseInt(ip.css('padding-top'));
+			var y = ip.offset().top;// + parseInt(ip.css('padding-top'));
 			$(this).css({
-				left: x,
-				top: y
+				'left': x,
+				'top': y
 			});
 		});
 	}

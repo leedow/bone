@@ -105,6 +105,7 @@
 
 .user-menu{
 	padding:30px 0;
+	font-size: 15px;
 }
 
 
@@ -132,6 +133,8 @@
 		border: 1px @base-line-color solid;
 	}
 }
+
+
 
 .pro-info{
 	text-align: left;
@@ -192,8 +195,9 @@
 
 //通用信息列表
 .item-list{
+	background: #fff;
 	li{
-		padding:10px 0;
+		padding: 10px 0;
 	}
 }
 .item-box{
@@ -203,7 +207,8 @@
 	text-align: left;
 	overflow: hidden;
 	.item-title{
-		 margin-bottom: 5px;
+	 
+		margin-bottom: 15px;
 		border-bottom: 1px @base-line-color solid;
 		padding-bottom: 15px;
 		h3{
@@ -211,6 +216,7 @@
 			padding:0;
 		}
 	}
+
 }
 .item-info{
 	p{
@@ -218,7 +224,7 @@
 		padding:0;
 	}
 	.title{
-		padding: 10px 0;
+		padding: 0 0 10px 0;
 		color: #999;
 	}
 
@@ -228,8 +234,60 @@
 			color:#dd514c
 		}
 	}
+	.warm{
+		font-size: 14px !important;
+	}
 }
 .item-tab{
-	padding-top: 15px;
+	//-top: 15px;
 	text-align: right;
 }
+
+//下订单
+.order-info{
+	border: 1px @base-line-color solid;
+	border-radius:5px;
+	padding:10px;
+	line-height: 28px;
+	overflow: hidden;
+
+	.pro-price .title{
+		padding:0;
+	}
+}
+
+.order-info-nobor{
+	border:0;
+}
+
+	.pay-button{
+		display: block;
+		background: none;
+		width: 90%;
+		border:2px #eee solid;
+		padding: 10px 15px;
+		border-radius: 4px;
+		color: #aaa;
+		cursor: pointer;
+	}
+
+	.pay-button:hover{
+		border: 2px #51bfa4 solid;
+	}
+
+	.pay-button-check{
+		border: 2px #51bfa4 solid;
+		color: #51bfa4;
+		 
+	}
+
+	.pay-button-check:before{
+		display:inline-block;
+		font:normal normal normal 14px/1 FontAwesome;
+		font-size:inherit;text-rendering:auto;
+		-webkit-font-smoothing:antialiased;
+		-moz-osx-font-smoothing:grayscale;
+		transform:translate(0, 0);
+		content: "\f00c ";
+		 
+	}
