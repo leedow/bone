@@ -153,6 +153,7 @@ body{
 	
 	li{
 		display: inline-block;
+		*display: inline;
 		font-size: 16px;
 		padding: 15px 20px 13px 20px;
 		position: relative;
@@ -375,7 +376,7 @@ body{
 	text-align: left;
 	border:3px #fff solid;
 	margin:10px;
-	//height:380px;
+	height:346px;
 	position: relative;
 	background: #fff;
 	.pic{
@@ -397,6 +398,15 @@ body{
 			color:#fff;
 			width: 100%;
 			.bbox;
+		}
+
+		.flag{
+			background: #FF3300;
+			color: #fff;
+			padding: 5px 10px;
+			position: absolute;
+			right:0;
+			bottom:0;
 		}
 	}
 
@@ -504,7 +514,7 @@ body{
 	text-align:center; 
 }
 .er{
-	float: left;
+	float: right;
 	text-align: center;
 	margin:0 0 0 30px;
 	border: 1px #eee solid;

@@ -7,6 +7,7 @@
  * @version $Id$
  */
 .score{
+	position: relative;
 	button{ 
 		background: none;
 		width: 40px;
@@ -14,6 +15,12 @@
 		cursor: pointer;
 		color: @score-normal-color;
 		font-size: 24px;
+	}
+	div{
+		position: absolute;
+		right:20px;
+		top:0;
+
 	}
 
 	.selected{
@@ -25,7 +32,13 @@
 	button{
 		 font-size: @font-size-lg;
 	}
- 
+ 	div{
+ 		line-height: 50px;
+ 		span{
+ 			font-size: @font-size-lg;
+ 			color:  @score-selected-color
+ 		}
+ 	}
 }
 
 .score-md{

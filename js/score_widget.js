@@ -13,6 +13,7 @@ bone.score = (function(){
 			var value = $(this).attr('data-value');
 			var flag = false;
 			parent.find('input').val(value);
+			parent.find('.score-count').text(value);
 
 			parent.find('button').each(function(){
 				if(!flag){
